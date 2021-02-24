@@ -1,0 +1,155 @@
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 4.8rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+h4 {
+  font-size: 2.8rem;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* utility */
+.center {
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.btn {
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  margin: 2rem 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+/* header */
+.header-container {
+  background-image: url(../img/banner.jpg);
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.header-container h1 a {
+  color: white;
+  text-decoration: none;
+}
+
+nav {
+  text-align: center;
+  margin: 3rem;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-decoration: white;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.site-header {
+  padding: 5rem;
+}
+
+.site-header p {
+  font-size: 2.8rem;
+  margin-top: 1.5rem;
+}
+
+/* main */
+.btn-read {
+  background-color: black;
+  color: white;
+}
+
+/* footer */
+.site-footer {
+  background-color: black;
+  margin-top: 4rem;
+  padding: 3rem;
+}
+
+.site-footer p a {
+  font-size: 4em;
+  color: white;
+  text-decoration: none;
+}
+
+.contact-form {
+  background-color: white;
+  padding: 5rem;
+}
+
+.contact-form .field {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.contact-form .field label {
+  margin-bottom: 8px;
+  width: 120px;
+  font-size: 1.6rem;
+}
+
+.contact-form .field input[type="text"],
+.contact-form .field input[type="email"],
+.contact-form .field textarea {
+  flex-grow: 1;
+  border: 1px solid #e1e1e1;
+  padding: 1rem;
+  font-size: 1.6rem;
+}
+
+.contact-form .field textarea {
+  height: 20rem;
+}
+
+.contact-form .btn-send {
+  background-color: black;
+  color: white;
+}
+
+.send {
+  display: flex;
+  justify-content: flex-end;
+}
