@@ -100,8 +100,35 @@ nav a {
   color: white;
 }
 
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blog-entry {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #c1c1c1;
+}
+
+.blog-entry: last-of-type {
+  border: none;
+}
+
+.blog,
+.courses {
+  flex: 0 0 100%;
+}
+
+.courses {
+  order: -1;
+}
+
 /* footer */
 .site-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   background-color: black;
   margin-top: 4rem;
   padding: 3rem;
@@ -113,9 +140,63 @@ nav a {
   text-decoration: none;
 }
 
+.site-footer .menu,
+.site-footer .title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-basis: 1;
+}
+
+.site-footer .menu a {
+  padding: 1.6rem;
+}
+
+@media (min-width: 768px) {
+  nav.menu {
+    display: flex;
+  }
+
+  nav.menu a {
+    margin-right: 2rem;
+    margin-bottom: 0;
+  }
+
+  .bar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .site-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40vh;
+  }
+
+  .main-container {
+    justify-content: space-between;
+  }
+
+  .blog {
+    flex-basis: 66.6%;
+  }
+
+  .courses {
+    flex-basis: calc(33.3% - 4rem);
+    order: 2;
+  }
+}
+
+/* for contact.html */
 .contact-form {
-  background-color: white;
+  position: relative;
   padding: 5rem;
+}
+
+.contact-form form {
+  padding: 4rem;
+  background-color: white;
 }
 
 .contact-form .field {
@@ -155,24 +236,25 @@ nav a {
 }
 
 @media (min-width: 768px) {
-  nav.menu {
-    display: flex;
-  }
-
-  nav.menu a {
-    margin-right: 2rem;
-    margin-bottom: 0;
-  }
-
-  .bar {
+  .form.flex {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
-  .site-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 40vh;
+  .contact-form {
+    margin-top: -10rem;
+  }
+
+  .complete {
+    flex-basis: 100%;
+  }
+
+  .center-elements {
+    justify-content: center;
+  }
+
+  .portion-6 {
+    flex-basis: calc(66.6 - 1rem);
   }
 }
