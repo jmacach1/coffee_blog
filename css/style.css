@@ -260,23 +260,19 @@ nav a {
 }
 
 /* about.html */
-.about-us {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
 
 .about-us-text p {
-  margin: 1.6rem;
+  margin: 1.6rem 0;
+}
+
+.about-us-text,
+.about-us-image {
+  padding: 1rem;
 }
 
 @media (min-width: 768px) {
   .about-us {
-    flex-wrap: nowrap;
-  }
-
-  .about-us-text,
-  .about-us-image {
-    flex: 1;
+    display: grid;
+    grid-template-columns: 50% 50%;
   }
 }
