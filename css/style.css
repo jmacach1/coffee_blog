@@ -111,7 +111,7 @@ nav a {
   border-bottom: 1px solid #c1c1c1;
 }
 
-.blog-entry: last-of-type {
+.blog-entry:last-of-type {
   border: none;
 }
 
@@ -188,7 +188,7 @@ nav a {
   }
 }
 
-/* for contact.html */
+/* contact.html */
 .contact-form {
   position: relative;
   padding: 5rem;
@@ -256,5 +256,27 @@ nav a {
 
   .portion-6 {
     flex-basis: calc(66.6 - 1rem);
+  }
+}
+
+/* about.html */
+.about-us {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-us-text p {
+  margin: 1.6rem;
+}
+
+@media (min-width: 768px) {
+  .about-us {
+    flex-wrap: nowrap;
+  }
+
+  .about-us-text,
+  .about-us-image {
+    flex: 1;
   }
 }
