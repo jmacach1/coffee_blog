@@ -11,6 +11,7 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
+  min-width: 400px;
 }
 
 h1 {
@@ -316,6 +317,7 @@ aside h2 {
 
 .course {
   margin: 1rem;
+  padding-bottom: 1rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   min-width: 280px;
@@ -331,7 +333,8 @@ aside h2 {
 }
 
 .course p,
-.course .title {
+.course .title,
+.course .btn {
   padding: 2rem;
 }
 
